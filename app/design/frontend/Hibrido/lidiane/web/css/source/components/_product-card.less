@@ -1,0 +1,25 @@
+//especifico para home
+& when (@media-common = true) {
+    li.product-item {
+        .product-item-actions .actions-primary + .actions-secondary {
+            display: none;
+        }
+
+        .product-item-details {
+            text-align: center;
+
+            .product-item-name > a, .product.name a > a {
+                color: @blue__color__100;
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            .price-box {
+                .price {
+                    font-weight: 500;
+                    color: @red__color__100;
+                }
+            }
+        }
+    }
+}
